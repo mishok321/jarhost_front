@@ -1,0 +1,14 @@
+$size-phone: 576px;
+$size-height-first-block: 620px;
+
+$text-white: #ffffff;
+$text-white-accent: #FFEE53;
+$text-brown: #3F2D1A;
+$button-box-shadow: 0 0.3em 1em -0.4em $text-white-accent;
+$primary-gradient: linear-gradient(0deg, #FFEE53, #FFEE53),
+                  linear-gradient(
+                    266.03deg,
+                    rgba(221, 69, 21, 0.2) 13.6%,
+                    rgba(255, 184, 0, 0) 114.15%,
+                    rgba(210, 32, 32, 0) 114.15%
+);
