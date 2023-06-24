@@ -1,6 +1,93 @@
-// .footer {
-//     background-color: antiquewhite;
-//     &afaf {
-//         background-color: #111;
-//     }
-// }
+@use 'vars' as v;
+.footer {
+    font-size: 18px;
+    color: v.$text-gray;
+    padding-top: 37px;
+    margin-top: 100px;
+    box-shadow: 0px -2px 25px 0px #0000001A;
+    h5 {
+        font-size: 18px;
+    }
+    &__info {
+        &-img {
+            margin-bottom: 30px;
+        } 
+        &-text {
+            font-size: 24px;
+            font-weight: 800;
+            color: v.$text-brown;
+        }      
+    }
+    &__social {
+        &-title {
+            font-weight: 800;
+            margin-bottom: 10px;
+        } 
+        &-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        } 
+        &-icon {
+            width: 32px;
+            height: 32px;
+            // margin: 10px 10px 10px 0;
+            margin-right: 10px;
+        }
+        &-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        &-labelwrapper {
+            display: flex;
+            align-items: center;
+        }
+        &-label {
+            margin: 0;
+        }
+        &-link {
+            text-decoration: none;
+            color: inherit;
+            transition: .2s all;
+            &:hover {
+                color: v.$text-brown;
+                // font-weight: 800;
+            }
+        }
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        &-title {
+            font-weight: bold;
+            font-size: 24px;
+            color: v.$text-brown;
+            margin-bottom: 10px;
+        }
+        &-mail {
+            color: v.$text-gray;
+            margin-bottom: 20px;
+        }
+        &-send {
+            background: v.$primary-gradient;
+            border-radius: 10px 5px 10px 5px;
+            border: none;
+            padding: 14px 0;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 24px;
+            font-weight: 800;
+            transition: .3s all;
+            &:hover {
+                box-shadow: v.$button-box-shadow;
+                transform: translateY(-0.25em);
+              }
+        } 
+    }
+}
+
+.info, .social, .navigation, .contact {
+    border: 1px solid #000;
+}
+
