@@ -1,0 +1,101 @@
+@use 'vars' as v;
+
+.videoscreen {
+  height: 100vh;
+  background: url("../assets/videoscreen_bg.png") no-repeat center;
+  background-size: cover;
+  user-select: none;
+
+  @media (max-width: v.$size-phone) {
+    background: none;
+  }
+
+  @media (max-height: v.$size-height-first-block) {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  &__mobilecontainer {
+    @media (max-width: v.$size-phone) {
+      background: v.$primary-gradient;
+      padding: 31px 25px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 10px 5px 10px 5px;
+    }
+  }
+
+  .container, &__wrapper {
+    height: 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 96px;
+    font-weight: 800;
+    line-height: 1.4;
+    opacity: .7;
+    color: v.$text-white;
+    text-transform: uppercase;
+
+    &-yellow {
+      color: v.$text-white-accent;
+      @media (max-width: v.$size-phone) {
+        color: v.$text-brown;
+      }
+    }
+
+    @media (max-width: v.$size-phone) {
+      font-weight: bold;
+      font-size: 48px;
+      opacity: 1;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    padding: 0;
+    color: v.$text-white;
+    opacity: .7;
+    font-size: 24px;
+    margin: 0 0 30px;
+
+    @media (max-width: v.$size-phone) {
+      font-size: 18px;
+      opacity: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__donate {
+    background: v.$primary-gradient;
+    border-radius: 10px 5px 10px 5px;
+    border: none;
+    color: v.$text-brown;
+    padding: 14px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 800;
+    transition: .3s all;
+
+    &:hover {
+      box-shadow: v.$button-box-shadow;
+      transform: translateY(-0.25em);
+    }
+
+    &-wrapper {
+      @media (max-width: v.$size-phone) {
+        padding: 20px 30px 0;
+      }
+    }
+  }
+}
