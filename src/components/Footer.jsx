@@ -8,17 +8,44 @@ export default function Footer() {
     return (<footer className="footer">
         <div className="container">
             <div className="row">
-                <div className="footer__info col-2">
+                <div className="footer__info col-lg-2 col-12">
                     <img className="footer__info-img" src={footerLogo} alt="trizub" />
                     <h4 className="footer__info-text">Lorem ipsum dolor sit amet consetetur</h4>
                 </div>
-                <div className="footer__navigation col-3">
-                    nav
+                <div className="footer__navigation col-lg-3 col-12">
+                <div className="footer__navigation_container">
+                    <h5 className="footer__navigation-title">
+                        Pages
+                    </h5>
+                    <ul className="footer__navigation-list">
+                        <li className="footer__navigation-item"><a className="footer__navigation-link" href="/#">Jars</a></li>
+                        <li className="footer__navigation-item"><a className="footer__navigation-link" href="/#">Partners</a></li>
+                        <li className="footer__navigation-item"><a className="footer__navigation-link" href="/#">About us</a></li>   
+                    </ul>
+                    </div>
+                    <div className="footer__navigation_container">
+                    <h5 className="footer__navigation-title">
+                        Pages
+                    </h5>
+                    <ul className="footer__navigation-list">
+                        <li className="footer__navigation-item"><a className="footer__navigation-link" href="/#">Contact</a></li>
+                        <li className="footer__navigation-item"><a className="footer__navigation-link" href="/#">Blog</a></li>
+                    </ul>
+                    </div>
+                    <div className="footer__navigation_container">
+                    <h5 className="footer__navigation-title">
+                        Other
+                    </h5>
+                    <ul className="footer__navigation-list">
+                        <li className="footer__navigation-item"><a className="footer__navigation-link" href="/#">FAQ</a></li>
+                        <li className="footer__navigation-item"><a className="footer__navigation-link" href="/#">Terms</a></li>
+                    </ul>
+                    </div> 
                 </div>
-                <div className="col-1">
+               
 
-                </div>
-                <div className="footer__social col-2">
+
+                <div className="footer__social col-lg-4 col-12">
                     <h5 className="footer__social-title">Social media</h5>
                         <ul className="footer__social-list">
                             <li className="footer__social-item">
@@ -41,10 +68,8 @@ export default function Footer() {
                             </li>
                         </ul>
                 </div>
-                <div className="col-1">
-
-                </div>
-                <div className="footer__contact col-3">
+            
+                <div className="footer__contact col-lg-3 col-12">
                     <h4 className="footer__contact-title">
                         Contact us
                     </h4>
@@ -52,6 +77,11 @@ export default function Footer() {
                         frontoxic@gmail.com
                     </h5>
                     <button className="footer__contact-send">Send email</button>
+                </div>
+            </div>
+            <div className="row">
+            <div className="footer__copyright-container col-12">
+                    <p className="footer__copyright-text">&copy; 2023 JarHost. All rights reserved</p>
                 </div>
             </div>
         </div>
