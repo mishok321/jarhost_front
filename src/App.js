@@ -1,14 +1,15 @@
 import './scss/App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Main from "./components/Main";
-
+import Register from "./components/Register";
+import Login from "./components/Login";
 function App() {
   return (
     <div className="App">
         {/* Header */}
-        <Main />
+        <Login/>
         {/*  Footer  */}
     </div>
+
   );
 }
 
