@@ -8,10 +8,10 @@ export default function Register(){
                 <div className="register__first">
                     <img className="register__first-img" src={logo_light}/>
                     <div className="register__first-menu-mobile"></div>
-                    <h1 className="register__first-title">BE <span>BRAVE</span><br/>LIKE<br/>UKRAINE</h1>
+                    <h1 className="register__first-title">BE <span className="register__first-title-yellow">BRAVE</span><br/>LIKE<br/>UKRAINE</h1>
                 </div>
                 <div className="register__second">
-                    <div className="register__second-wrapped">
+                    <div className="register__second-wrapper">
                         <h2 className="register__second-title">Sign Up</h2>
                         <input className="register__second-text" type="text" placeholder="Login"/>
                         <input className="register__second-text" type="text" placeholder="Email"/>
